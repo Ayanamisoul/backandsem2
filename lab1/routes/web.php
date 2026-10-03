@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+// Главная страница — вызов метода контроллера при входящем запросе
+Route::get('/', [MainController::class, 'index'])->name('home');
+
+// Страница galery — отображение full_image
+Route::get('/galery/{id}', [MainController::class, 'gallery'])->name('gallery');
 
 Route::get('/about', function () {
     return view('about');
