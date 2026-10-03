@@ -28,6 +28,26 @@
             font-size: 16px;
         }
         nav ul li a:hover { text-decoration: underline; }
+        .articles-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .articles-table th,
+        .articles-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .articles-table th {
+            background-color: #f4f4f4;
+        }
+        .articles-table img {
+            display: block;
+            max-width: 150px;
+            height: auto;
+        }
         main { flex: 1; padding: 30px; }
         footer {
             background-color: #333;
