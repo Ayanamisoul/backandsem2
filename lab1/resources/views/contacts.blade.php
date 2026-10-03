@@ -1,12 +1,12 @@
-@@extends('layouts.main')
+@extends('layouts.main')
 
-@@section('title', 'Контакты')
+@section('title', 'Контакты')
 
-@@section('content')
+@section('content')
     <h1>Контакты</h1>
     <ul>
-        @@foreach($contacts as $contact)
+        @foreach($contacts as $contact)
             <li><strong>{{ $contact['name'] }}</strong>: {{ $contact['value'] }}</li>
-        @@endforeach
+        @endforeach
     </ul>
-@@endsection
+@endsection

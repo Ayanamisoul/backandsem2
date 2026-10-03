@@ -1,9 +1,9 @@
-@@extends('layouts.main')
+@extends('layouts.main')
 
-@@section('title', 'О нас')
+@section('title', 'О нас')
 
-@@section('content')
+@section('content')
     <h1>О нас</h1>
     <p>Мы — команда разработчиков, создающая современные веб-приложения.</p>
     <p>Наша цель — предоставлять качественные решения для наших клиентов.</p>
-@@endsection
+@endsection

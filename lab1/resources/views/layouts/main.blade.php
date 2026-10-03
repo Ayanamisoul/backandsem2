@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Мой сайт')</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -31,13 +27,8 @@
             text-decoration: none;
             font-size: 16px;
         }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        main {
-            flex: 1;
-            padding: 30px;
-        }
+        nav ul li a:hover { text-decoration: underline; }
+        main { flex: 1; padding: 30px; }
         footer {
             background-color: #333;
             color: #fff;
