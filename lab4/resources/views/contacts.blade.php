@@ -1,0 +1,12 @@
+@extends('layouts.main')
+
+@section('title', 'Контакты')
+
+@section('content')
+    <h1>Контакты</h1>
+    <ul>
+        @foreach($contacts as $contact)
+            <li><strong>{{ $contact['name'] }}</strong>: {{ $contact['value'] }}</li>
+        @endforeach
+    </ul>
+@endsection
